@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'ImageController@index')->name('images.index');
+Route::post('/find', 'ImageController@find')->name('images.find');
